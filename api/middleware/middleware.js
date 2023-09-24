@@ -21,7 +21,7 @@ async function validateUserId(req, res, next) {
 
     if(!user){
       res.status(404).json({
-        message: 'The specified user does not exist'
+        message: `/not found/${id}`
       })
     }
     else{
